@@ -1,0 +1,125 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --ff: 'Kumbh Sans', sans-serif;
+    --fs: 18px;
+}
+*{
+    font-family: var(--ff);
+    font-size: var(--fs);
+    font-weight: 400;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    color: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* position: relative; */
+}
+.card{
+    margin: auto;
+}
+.bg-top{
+    position: absolute;
+    top: -400px;;
+    left: -400px;;
+}
+.bg-bottom{
+    position: absolute;
+    bottom:-400px;
+    right: -400px;
+}
+.container{
+    max-width: 325px;
+    min-height: 375px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.vc{
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -53px;
+    background-color: white;
+}
+span{
+    color:var(--dark-gray);
+}
+h1, h2{
+    color: var(--very-dark);
+    font-weight: 700;
+    margin:25px 0 10px;
+}
+p{
+    font-size: 0.8em;
+    margin-top:0;
+}
+.row{
+    border-top: 1px solid hsla(0, 0%, 59%, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    gap:45px;
+    width: 100%;
+    position: absolute;
+    bottom:10px;
+}
+.row p{
+    font-size: 0.6em;
+}
+.row h2{
+    margin:10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+ */
+
+/* Footer */
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #2A3039;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.attribution a {
+    color:  #FF931E;
+    font-weight: 600;
+    text-decoration: none;
+    background: transparent;
+    border:none;
+    padding:0;
+}
+.attribution a:hover{
+    background: none;
+    border: none;
+    color: white;
+} 
